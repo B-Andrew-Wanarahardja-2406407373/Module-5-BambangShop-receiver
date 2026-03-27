@@ -1,6 +1,8 @@
 use std::fmt::{Display, Formatter, Result};
 use rocket::serde::{Deserialize, Serialize};
 
+use crate::service::notification::NotificationService;
+
 #[derive(Debug, Clone, Deserialize, Serialize)]
 #[serde(crate = "rocket::serde")]
 pub struct Notification {
