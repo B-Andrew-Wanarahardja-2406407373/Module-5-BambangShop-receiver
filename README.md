@@ -66,7 +66,7 @@ You can install Postman via this website: https://www.postman.com/downloads/
     -   [:D] Commit: `Create Notification database and Notification repository struct skeleton.`
     -   [:D] Commit: `Implement add function in Notification repository.`
     -   [:D] Commit: `Implement list_all_as_string function in Notification repository.`
-    -   [ ] Write answers of your learning module's "Reflection Subscriber-1" questions in this README.
+    -   [:D] Write answers of your learning module's "Reflection Subscriber-1" questions in this README.
 -   **STAGE 2: Implement services and controllers**
     -   [:D] Commit: `Create Notification service struct skeleton.`
     -   [:D] Commit: `Implement subscribe function in Notification service.`
@@ -85,5 +85,8 @@ This is the place for you to write reflections:
 ### Mandatory (Subscriber) Reflections
 
 #### Reflection Subscriber-1
+1.  RwLock prevents data to be updated at the same time but allows them to be read at the same time. This is important because if data is updated at the same time then the result would be indeterminate. With RwLock, this can be prevented. As for mutex, it prevents both reading and writing at the same time. So if there were multiple users trying to access the same data at the same time, they would have to take turns. RwLock allows simultaneous reading, and so it will be better to use RwLock instead of mutex.
+
+2. Because by doing that, rust prevents a race condition for example where both increments a counter at the same time. by preventing this, it would prevent bugs that could appear further down the line. 
 
 #### Reflection Subscriber-2

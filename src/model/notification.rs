@@ -17,7 +17,7 @@ impl Display for Notification {
     fn fmt(&self, f: &mut Formatter<'_>) -> Result {
         if self.status.to_uppercase().eq("CREATED") {
             return write!(f,
-                "Hello {}, let's try our new {} product: {}, only in BambangShop! 
+                "Hello {}! let's try our new {} product: {}, only in BambangShop! 
                 Check it out! {}",
                 self.subscriber_name, 
                 self.product_type.to_lowercase(), 
@@ -26,14 +26,14 @@ impl Display for Notification {
             );
         } else if self.status.to_uppercase().eq("DELETED") {
             return write!(f,
-                "Hello {} we informed that our {} product called {} already sold out...",
+                "Hello {}, we'd like to inform that our {} product called {} already sold out...",
                 self.subscriber_name, 
                 self.product_type.to_lowercase(), 
                 self.product_title
             );
         } else {
             return write!(f,
-                "Hello {} let's try our {} product: {}!, grab it before the stock runs out!
+                "Hello {}! let's try our {} product: {}!, grab it before the stock runs out!
                 Check it out! {}",
                 self.subscriber_name, 
                 self.product_type.to_lowercase(), 
