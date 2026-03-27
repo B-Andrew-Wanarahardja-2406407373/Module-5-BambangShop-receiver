@@ -90,3 +90,8 @@ This is the place for you to write reflections:
 2. Because by doing that, rust prevents a race condition for example where both increments a counter at the same time. by preventing this, it would prevent bugs that could appear further down the line. 
 
 #### Reflection Subscriber-2
+1. Before reading this question, no. Because i was mostly focused on getting this done while trying to understand some 20 pages of a language i never encountered. After reading it, i looked at src/lib.rs and i don't undertand anything. The only thing i managed to somewhat get was that the compose_error_response was defined here. I'd seen this function used several times but thought it was one of the built-in functions.
+
+2. Well, to plug in subscribers, as in, adding more subscribers, you could just add a subscriber to the repository. I haven't tried spawning multiple instances of the main application yet, i don't think it would be much different? i'm not sure how it would dubdcribe if the two instances have two types of the same name though.
+
+3. No, i haven't. Well i don't think failed attempts count. That was before i saw all the ones provided. But i found them before succeeding so i ended up not completing them. But i don't think i can say much from that experience alone.
